@@ -1,5 +1,6 @@
 
 //  ********* CALCULATES THE NTH FACTORIAL **************
+
 function FirstFactorial(num){ 
   total = 1;
   for (var i = 1; i <= num; i++){
