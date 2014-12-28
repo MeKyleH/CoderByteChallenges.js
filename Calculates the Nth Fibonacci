@@ -1,0 +1,16 @@
+//  ********* CALCULATES FIBONACCI **************
+
+function getFibonacci(numFibs){
+	var a = 0;
+	var b = 1;
+	var newArray = [0,1];
+	var temp = 0;
+	for (var i = 2; i < numFibs; i++){
+		temp = a + b;
+		newArray[i] = temp;
+		a = b;
+		b = temp;
+	}
+	return newArray;
+}
+document.write("fibonacci 100 = " + getFibonacci(100));
