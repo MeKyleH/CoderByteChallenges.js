@@ -1,0 +1,20 @@
+//  ********* SWAPS STRING CAPITALIZATION **************
+function SwapCase(inputString) { 
+  
+  //creates an upper and lower case version of the string
+  var upperString = inputString.toUpperCase();
+  var lowerString = inputString.toLowerCase();
+  var finalString = "";
+  
+  //compares each instance against the capitalization and adds the opposite to final string
+  for (var i in inputString){
+    if (inputString[i] == upperString[i]){
+      finalString +=(lowerString[i])
+    }else{
+      finalString +=(upperString[i])
+    }
+  } 
+  
+  //returns the reverse capitalized string.
+  return finalString;     
+}
