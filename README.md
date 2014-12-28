@@ -1,4 +1,4 @@
 CoderByteChallenges.js
 ======================
 
-JavaScript CoderByte Challenges
+These are the easy challenges
