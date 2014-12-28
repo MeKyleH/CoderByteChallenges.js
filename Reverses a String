@@ -1,0 +1,13 @@
+//  ********* REVERSES A STRING **************
+
+originalString = "This is my old string";
+function reverseString(oldString){
+	newString = "";
+	newLetter = oldString.length - 1;
+	for (var i = 0; i < oldString.length; i++){
+		newString += oldString[newLetter];
+		newLetter--;
+	};
+	return(newString);
+};
+document.write(reverseString(originalString));
