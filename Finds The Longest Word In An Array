@@ -1,3 +1,5 @@
+//  ********* FINDS THE LONGEST WORD IN AN ARRAY **************
+
 testArray = ["Jim", "Jimmy", "carter", "woolstenhlume", "bj", "jacobsonsentonsingtongermon"]
 longestWord = testArray[0] 
 for (var i = 1; i < testArray.length; i++){
