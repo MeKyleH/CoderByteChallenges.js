@@ -1,0 +1,13 @@
+function LongestWord(sen) {
+
+  var wordArr = sen.split(" ");
+  var longest = 0;
+  for (var i = 0; i < wordArr.length; i++) {
+    wordArr[i] = wordArr[i].replace(/\W/g, '');
+  }
+  for (var i = 1; i < wordArr.length; i++) {
+    if (wordArr[i].length > wordArr[longest].length) longest = i;
+  }
+
+  return wordArr[longest];
+}
