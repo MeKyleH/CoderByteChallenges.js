@@ -1,0 +1,12 @@
+// determines the larger of two numbers
+function CheckNums(num1,num2) { 
+  equalString = "-1";
+  if((num1 - num2) > 0){
+    return false;
+  }
+  else if ((num1 - num2) === 0){
+    return equalString
+  }else{
+    return true;
+  }
+}
