@@ -1,0 +1,18 @@
+// capitalizes the first letter of each word
+function LetterCapitalize(string) { 
+  newString = "";
+  newString += string[0].toUpperCase();    
+  for (var i = 1; i<string.length; i++){
+    if (string[i-1] === " "){
+
+      newString += string[i].toUpperCase();
+    }
+    else{
+      newString  += string[i];
+    }
+  }
+  
+  // code goes here  
+  return newString; 
+
+}
