@@ -1,0 +1,10 @@
+// sums all numbers from 1 to the inputted number
+function SimpleAdding(num) { 
+  total = 0;
+  for (var i = 1; i <= num; i++){
+    total += i;
+  };
+  // code goes here  
+  return total; 
+         
+}
