@@ -1,0 +1,89 @@
+// changes each letter to the next in the alphabet and capitalizes vowels
+function LetterChanges(str) {
+		var newStr = "";
+		for (var i = 0; i < str.length; i++) {
+			switch(str[i]) {
+				case "a" :
+					newStr += "b";
+					break;
+				case "b" :
+					newStr += "c";
+					break;
+				case "c" :
+					newStr += "d";
+					break;
+				case "d" :
+					newStr += "E";
+					break;
+				case "e" :
+					newStr += "f";
+					break;
+				case "f" :
+					newStr += "g";
+					break;
+				case "g" :
+					newStr += "h";
+					break;
+				case "h" :
+					newStr += "I";
+					break;
+				case "i" :
+					newStr += "j";
+					break;
+				case "j" :
+					newStr += "k";
+					break;
+				case "k" :
+					newStr += "l";
+					break;
+				case "l" :
+					newStr += "m";
+					break;
+				case "m" :
+					newStr += "n";
+					break;
+				case "n" :
+					newStr += "O";
+					break;
+				case "o" :
+					newStr += "p";
+					break;
+				case "p" :
+					newStr += "q";
+					break;
+				case "q" :
+					newStr += "r";
+					break;
+				case "r" :
+					newStr += "s";
+					break;
+				case "s" :
+					newStr += "t";
+					break;
+				case "t" :
+					newStr += "U";
+					break;
+				case "u" :
+					newStr += "v";
+					break;
+				case "v" :
+					newStr += "w";
+					break;
+				case "w" :
+					newStr += "x";
+					break;
+				case "x" :
+					newStr += "y";
+					break;
+				case "y" :
+					newStr += "z";
+					break;
+				case "z" :
+					newStr += "A";
+					break;
+				default:
+					newStr += str[i];				
+			}
+		}
+		return newStr;
+	}
