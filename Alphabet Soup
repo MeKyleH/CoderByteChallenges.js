@@ -1,0 +1,19 @@
+function AlphabetSoup(str) { 
+    var tempStr = "";
+    // loops through the string as many times as there are letters
+	for (var i = 0; i < str.length; i++) {
+        // looops through string and sorts neighboring letters
+		for (var j = 0; j < str.length; j++) {
+            if(str[j] > str[j + 1]) {
+                tempStr += str[j + 1] + str[j];
+                j++;
+            } else {
+                tempStr += str[j];
+            } 
+        }
+        // resets strings for the next loop
+        str = tempStr;
+        tempStr = "";
+    }
+    return str;
+}
