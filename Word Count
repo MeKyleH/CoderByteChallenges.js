@@ -1,0 +1,13 @@
+function WordCount(str) {
+    var count = 0;
+    // adds the first word to the count
+    if (str.charAt(0) !== " ") count++;
+    
+    // adds additional words to the count
+    for (var i = 0; i < str.length; i++) {
+        if(str.charAt(i) === " " && str.charAt(i + 1) !== " " ) {
+            count++;
+        }
+    }
+    return count;
+}
