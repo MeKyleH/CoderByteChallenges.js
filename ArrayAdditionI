@@ -1,0 +1,16 @@
+// determines if the sum of array elements excluding the highest value equals the highest value in the array
+function ArrayAdditionI(arr) {
+  var total = 0;
+  var highest = 0;
+  // finds highest number;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > highest) highest = arr[i];
+  }
+  // calculates the total excluding the highest value
+  for (var j = 0; j < arr.length; j++) {
+    if (arr[j] !== highest) total += arr[j];
+  }
+  // checks if the sum is the same as the highest array element
+  if (total === highest) return true;
+  else return false;
+}
