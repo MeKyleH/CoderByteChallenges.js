@@ -1,6 +1,6 @@
 // returns comma formated string of the quotient of two numbers
 function DivisionStringified(num1, num2) {
-  var div = Math.floor(num1 / num2);
+  var div = Math.round(num1 / num2);
   var str = div.toString();
   var answer = "";
   var count = 1;
