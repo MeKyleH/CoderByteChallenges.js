@@ -1,0 +1,10 @@
+function DashInsert(str) {
+  var newStr = "";
+  for (var i = 0; i < str.length; i++) {
+    if (str[i] % 2 !== 0 && str[i+1] % 2 !== 0 && i !== str.length - 1) {
+      newStr += str[i] + "-";
+    } else newStr += str[i];
+
+  }
+  return newStr;
+}
