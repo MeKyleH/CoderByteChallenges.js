@@ -1,0 +1,30 @@
+// calculates the linear vs exponential growth per generation
+function linear(generations) 
+{
+	var arr = [1,2];
+  for (var i = 2; i < generations; i++) 
+  {
+  	arr[i] = arr[i-1]*2;
+  }
+  return arr;
+}
+
+function exponential(generations) 
+{
+	var arr = [1,2];
+  for (var i = 2; i < generations; i++) 
+  {
+  	arr[i] = arr[i-1]*arr[i-1];
+  }
+  return arr;
+}
+
+var generations = 10
+var linear = linear(generations);
+var exponential = exponential(generations);
+
+console.log("Linear: Exponetial");
+for (var i = 0; i < generations; i++)
+{
+	console.log(linear[i] + " " + exponential[i]);
+}
